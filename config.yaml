@@ -1,0 +1,43 @@
+paths:
+  data_dir: "data/coco"
+  annotations_dir: "data/coco/annotations"
+  output_dir: "outputs"
+  figures_dir: "outputs/figures"
+  reports_dir: "outputs/reports"
+
+coco:
+  year: 2017
+  train_annotations: "instances_train2017.json"
+  val_annotations: "instances_val2017.json"
+
+analysis:
+  bbox:
+    small_area_max: 1024      # 32*32
+    medium_area_max: 9216     # 96*96
+  cooccurrence:
+    min_cooccurrence: 10
+    network_edge_threshold: 50
+    top_k_pairs: 30
+  long_tail:
+    head_ratio: 0.20
+    tail_ratio: 0.50
+  difficulty:
+    weights:
+      small_object_ratio: 0.35
+      density: 0.25
+      area_variance: 0.20
+      aspect_ratio_variance: 0.10
+      crowd_ratio: 0.10
+
+visualization:
+  dpi: 300
+  figsize: [12, 8]
+  color_palette: "Set2"
+  font_family: "SimHei"
+  interactive: true
+  formats: ["png", "pdf"]
+
+download:
+  coco_url_base: "http://images.cocodataset.org"
+  download_images: false
+  val_images: true

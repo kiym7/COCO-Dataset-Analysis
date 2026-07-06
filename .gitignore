@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Project data (large files)
+data/coco/annotations/
+data/coco/images/
+
+# Outputs (generated at runtime)
+outputs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
